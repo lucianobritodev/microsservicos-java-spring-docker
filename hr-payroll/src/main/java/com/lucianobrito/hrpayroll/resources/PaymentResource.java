@@ -2,7 +2,7 @@ package com.lucianobrito.hrpayroll.resources;
 
 import com.lucianobrito.hrpayroll.entities.Payment;
 import com.lucianobrito.hrpayroll.service.PaymentService;
-import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "/payments")
-@AllArgsConstructor
 public class PaymentResource {
 
+    @Autowired
     private PaymentService service;
 
     @GetMapping(value = "/{workerId}/days/{days}")

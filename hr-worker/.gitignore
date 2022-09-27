@@ -6,6 +6,7 @@ target/
 !**/http*
 !**/src/main/resources/data
 
+
 ### Eclipse / STS ###
 .apt_generated
 .classpath
