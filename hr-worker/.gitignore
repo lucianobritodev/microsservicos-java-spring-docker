@@ -3,6 +3,7 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+!**/http*
 !**/src/main/resources/data
 
 ### Eclipse / STS ###
@@ -15,7 +16,6 @@ target/
 .sts4-cache
 .metadata
 target/
-http*
 RemoteSystemsTempFiles
 
 ### IntelliJ IDEA ###
@@ -23,7 +23,6 @@ RemoteSystemsTempFiles
 *.iws
 *.iml
 *.ipr
-
 
 ### NetBeans ###
 /nbproject/private/
